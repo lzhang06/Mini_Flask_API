@@ -1,0 +1,137 @@
+[INFO  - 2018-05-17T19:36:38.897Z] GhostDriver - Main - running on port 56646
+[INFO  - 2018-05-17T19:36:39.765Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-05-17T19:36:39.765Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.customHeaders:  - {}
+[INFO  - 2018-05-17T19:36:39.765Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.11 (El Capitan)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-05-17T19:36:39.765Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9ea4b500-5a09-11e8-8e47-45140f88f69d
+[ERROR - 2018-05-17T19:36:48.780Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.780Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.781Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.781Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.782Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.782Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.787Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.788Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.790Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.790Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.794Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-05-17T19:36:48.794Z] Session [9ea4b500-5a09-11e8-8e47-45140f88f69d] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.2.104573.js:2)
+  g (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  c (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  s (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+  (anonymous function) (https://www.marinetraffic.com/js/1.mtapp.138.js:1)
+
+  phantomjs://platform/console++.js:263 in error

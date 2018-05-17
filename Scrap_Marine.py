@@ -22,12 +22,14 @@ import sys, traceback
 from vessel_detail import bs4_vessel_detail 
 
 def Scrap_Marine(Keywords):
-    path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver' 
-    driver = webdriver.Chrome(path_chrome)
+    # path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver' 
+    driver = webdriver.PhantomJS()
+    driver.set_window_size(1024, 768)
+    
     driver.wait = WebDriverWait(driver, 10)
 
     driver.get("http://www.marinetraffic.com")
-
+    driver.save_screenshot('screen.png')
     delay = 3 # seconds
 
     try:
