@@ -14,7 +14,7 @@ def read_data():
 
     return jsonify(vessels_info_json)
 
-test_value = 'QUEEN ELIZABETH'
+
 
 if __name__ == '__main__':
 	# port = int(os.environ.get("PORT", 5000))

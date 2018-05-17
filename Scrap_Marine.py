@@ -2,6 +2,7 @@
 # coding: utf-8
 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -22,10 +23,18 @@ import sys, traceback
 from vessel_detail import bs4_vessel_detail 
 
 def Scrap_Marine(Keywords):
-    # path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver' 
-    driver = webdriver.PhantomJS()
-    driver.set_window_size(1024, 768)
+    #path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver'
+    GOOGLE_CHROME_BIN = '/app/.apt/usr/bin/google-chrome'
+    chrome_options.binary_location = GOOGLE_CHROME_BIN
+    CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
     
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--window-size=1920x1080")
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--no-sandbox')
+    
+    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=CHROMEDRIVER_PATH)
     driver.wait = WebDriverWait(driver, 10)
 
     driver.get("http://www.marinetraffic.com")
@@ -84,7 +93,7 @@ def Scrap_Marine(Keywords):
 
 
 
-
+test_value = 'QUEEN ELIZABETH'
 if __name__ == '__main__':
     print(Scrap_Marine(test_value))
 
