@@ -1,2 +1,5 @@
-Flask
-gunicorn
+Flask==0.11.1
+selenium==3.4.2
+beautifulsoup4==4.6.0
+python_dateutil==2.7.3
+
