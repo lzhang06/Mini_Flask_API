@@ -23,11 +23,11 @@ import sys, traceback
 from vessel_detail import bs4_vessel_detail 
 
 def Scrap_Marine(Keywords):
-    #path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver'
-    GOOGLE_CHROME_BIN = '/app/.apt/usr/bin/google-chrome'
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
-    
+#    path_chrome = '/Users/renyuzhang/Desktop/marine_api/chromedriver'
+#    GOOGLE_CHROME_BIN = '/app/.apt/usr/bin/google-chrome'
+#    chrome_options.binary_location = GOOGLE_CHROME_BIN
+#    CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
+
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1920x1080")
