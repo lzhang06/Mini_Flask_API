@@ -38,9 +38,9 @@ def Scrap_Marine(Keywords):
     weburl = 'https://www.marinetraffic.com/en/ais/index/search/all?keyword={}'.format(Keywords)
     soup = fetch_data(weburl)
 
-    result_dict = collections.OrderedDict()
+    result_list = list()
     count = 0
-    i = 0
+    
     while True:
         try:
             search_tab = soup.find('div', {'class': 'mt-table mt-table-responsive'})
@@ -51,16 +51,18 @@ def Scrap_Marine(Keywords):
                     vess_url = fst_half_url+link['href']
 
                     row = [i.text.strip() for i in col]
-                    mmsi = re.search(r"mmsi:(.*)/", vess_url).group(1)
-         
+                    mmsi = re.search(r"mmsi:(.*?)/", vess_url).group(1)
+                    ship_id = re.search(r"shipid:(.*?)/", vess_url).group(1)
                         
-                    result_dict[mmsi] = collections.OrderedDict()
-                    result_dict[mmsi]['mmsi'] = mmsi
-                    result_dict[mmsi]['Name'] = row[0]
-                    result_dict[mmsi]['Result_Type'] = row[1]
-                    result_dict[mmsi]['Description'] = row[2]
-                    result_dict[mmsi]['Detail_Link'] = vess_url
-                
+                    result_dict = collections.OrderedDict()
+                    result_dict['mmsi'] = mmsi
+                    result_dict['Name'] = row[0]
+                    result_dict['Result_Type'] = row[1]
+                    result_dict['Description'] = row[2]
+                    result_dict['Detail_Link'] = vess_url
+                    result_dict['ship_id'] = ship_id
+
+                    result_list.append(result_dict)
     #             result_dict[mmsi]['details'] = bs4_vessel_detail(vess_url)
                 
                 print(count)
@@ -76,9 +78,14 @@ def Scrap_Marine(Keywords):
             print("found %s records"%len(result_dict))
             break
 
+    data = collections.OrderedDict()
+    data['Brief_Search'] = collections.OrderedDict()
+    data['Brief_Search']['Num_Found'] = len(result_dict)
+    data['Brief_Search']['Query_Parms'] = [Keywords]
 
-    
-    return result_dict
+    data['Data'] = result_list
+    # data = collections.OrderedDict(sorted(data.items(), reverse= True))
+    return data
 
 
 
