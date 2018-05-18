@@ -4,7 +4,12 @@ import re
 import os
 from Scrap_Marine_BS4 import Scrap_Marine
 
+import sys
+import logging
+
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 @app.route('/', methods=['GET'])
 def read_data():
