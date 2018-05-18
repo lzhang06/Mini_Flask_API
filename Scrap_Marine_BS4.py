@@ -31,7 +31,7 @@ def Scrap_Marine(Keywords):
         request=urllib.request.Request(url,None,headers) 
         response = urllib.request.urlopen(request)
         web_page = response.read()
-        soups = BeautifulSoup(web_page)
+        soups = BeautifulSoup(web_page, "lxml")
         return soups
 
     fst_half_url = 'https://www.marinetraffic.com'
