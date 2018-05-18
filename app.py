@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request, Response
 import json
-import re
 import os
 from Scrap_Marine_BS4 import Scrap_Marine
 
@@ -17,7 +16,7 @@ def read_data():
  # vesselID = request.args.get('vesselID')
     name = request.args.get('name')
     # port = request.args.get('port')
-    if re.search(r"\s", name):
+    if ' ' in name:
     	name = name.replace(' ', '+')
   		
     vessels_info_json = Scrap_Marine(name)
