@@ -10,16 +10,22 @@ app = Flask(__name__)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 
-@app.route('/', methods=['GET'])
+@app.route('/query', methods=['GET'])
 def read_data():
  # vessel ID/port/name
  # vesselID = request.args.get('vesselID')
-    name = request.args.get('name')
+ 
+    key_word = request.args.get('key_word')
+    loc= request.args.get('location')
+
+    search_type = request.args.get('search_type')
+
     # port = request.args.get('port')
-    if ' ' in name:
-    	name = name.replace(' ', '+')
+    if ' ' in key_word:
+    	key_word = key_word.replace(' ', '+')
+
   		
-    vessels_info_json = Scrap_Marine(name)
+    vessels_info_json = Scrap_Marine(key_word, location = loc, search_type = search_type)
 
     return jsonify(vessels_info_json)
 
