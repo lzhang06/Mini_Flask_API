@@ -100,7 +100,7 @@ def Scrap_Marine(Keywords, *args, **kwargs):
                     else:
                         exname =''         
                     
-                    if q_location is None or location == q_location:
+                    if q_location is None or location == q_location.lower():
                         result_dict = collections.OrderedDict()
                         result_dict['MMSI'] = mmsi
                         result_dict['Name'] = row[0].lower()
